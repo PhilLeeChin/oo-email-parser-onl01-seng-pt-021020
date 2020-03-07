@@ -14,6 +14,9 @@ class EmailAddressParser
   def parse
     binding.pry
     new_arr = []
-    email_addresses.split(' ')
+    splice_em = email_addresses.split(' ')
+    splice_em.each do |email|
+
+    end
   end
 end
