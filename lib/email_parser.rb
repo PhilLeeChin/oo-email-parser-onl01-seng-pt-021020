@@ -12,7 +12,7 @@ class EmailAddressParser
   def parse(emails)
     new_arr = []
     emails.each do |addresses|
-      addresses.split(',')
+      addresses.split.uniq(',')
       new_arr << addresses
     end
     new_arr
