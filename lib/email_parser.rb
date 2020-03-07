@@ -10,6 +10,7 @@ class EmailAddressParser
   end
 
   def parse
+    binding.pry
     email_addresses.parse do |addresses|
       addresses.split(', ')
     end
