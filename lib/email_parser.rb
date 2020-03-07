@@ -18,6 +18,7 @@ class EmailAddressParser
       email.delete_suffix!(',')
       new_arr << email
     end
+    new_arr.uniq
     binding.pry
   end
 end
