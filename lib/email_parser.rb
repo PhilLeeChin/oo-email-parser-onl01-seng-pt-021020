@@ -9,11 +9,11 @@ class EmailAddressParser
     @email_addresses = emails
   end
 
-  def parse
+  def parse(emails)
     new_arr = []
-    @email_addresses.each do |emails|
-      emails.split(',')
-      new_arr << emails
+    emails.each do |addresses|
+      addresses.split(',')
+      new_arr << addresses
     end
     new_arr
   end
