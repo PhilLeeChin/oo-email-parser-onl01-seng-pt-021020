@@ -5,6 +5,8 @@
 class EmailAddressParser
 
   def parse
+    @email_addresses = []
+    parser = EmailAddressParser.new(@email_addresses)
   end
 
 end
