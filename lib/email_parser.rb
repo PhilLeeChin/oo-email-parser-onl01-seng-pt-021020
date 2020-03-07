@@ -10,7 +10,12 @@ class EmailParser
   end
 
   def parse
-    parser = EmailParser.new(@email_addresses)
+    new_arr = []
+    email_addresses.collect.split do |emails|
+      emails.split(',')
+      new_arr << emails
+    end
+    new_arr
   end
 
 end
