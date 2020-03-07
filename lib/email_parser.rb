@@ -12,11 +12,10 @@ class EmailAddressParser
   end
 
   def parse
-    binding.pry
     new_arr = []
     splice_em = email_addresses.split(' ')
     splice_em.each do |email|
-
+      binding.pry
     end
   end
 end
