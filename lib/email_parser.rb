@@ -19,6 +19,6 @@ class EmailAddressParser
       new_arr << email
     end
     new_arr.uniq
-    binding.pry
+    #binding.pry
   end
 end
