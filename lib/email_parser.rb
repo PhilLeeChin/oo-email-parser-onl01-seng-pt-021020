@@ -15,7 +15,9 @@ class EmailAddressParser
     new_arr = []
     splice_em = email_addresses.split(' ')
     splice_em.each do |email|
-      binding.pry
+      email.delete_suffix!(',')
+      new_arr << email
     end
+    binding.pry
   end
 end
